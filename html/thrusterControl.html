@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/thrusterControlStyles.css">   
+    <script src="../src/angular.min.js"></script>
+
+    <title>SeaFox Inventive Control GUI</title>
+</head>
+<body ng-app='order' ng-controller='MainCtrl' id='scope'>
+
+    <div class="navbarContainer">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/icons/ROV.png" alt="SeaFox Inventive Logo" style="display: flex; width: 80%; height: auto;">
+            </div>
+            <ul>
+                <li class="hyperlink"><a href="index.html">
+                    <img class="icon" src="../images/icons/screen.png" alt="Screen Icon"></a>
+                </li>
+                <li class="hyperlink"><a href="controller.html">
+                    <img class="icon" src="../images/icons/controller.png" alt="Controller Icon"></a>
+                </li>
+                <li class="hyperlink" style="background-color: #8bcfe68e;"><a href="thrusterControl.html">
+                    <img class="icon" src="../images/icons/thruster.png" alt="Thruster Icon"></a>
+                </li>
+                <li class="hyperlink"><a href="scrinsho.html">
+                    <img class="icon" src="../images/icons/settings.png" alt="Settings Icon"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="thrustersContainer">
+        <img src="../images/ROV2.png" alt="">
+        <div class="thrustersController">
+            <div class="adjustMotor">
+                <div>
+                    <img src="../images/Thrusters/leftThruster.png" alt="">
+                </div>                
+                <h1 ng-model="thrusterName">{{thruster.Name}}</h1>
+                <div class="setValues">
+                    <div class="setMaxForwardContainer">
+                        <h2>Max Forward</h2>
+                        <input type="range" name="set Max Forward" id="maxForward" min="0" max="600" ng-model="maxForward[thruster.index]">                    
+                        <span class="selectorValues" id="setForwardValue">{{maxForward[thruster.index]}}</span>
+                    </div>
+                    <div class="setMaxReverseContainer">
+                        <h2>Max Reverse</h2>
+                        <input type="range" name="set Max Reverse" id="maxReverse" min="0" max="600" ng-model="maxReverse[thruster.index]">                    
+                        <span class="selectorValues" id="setReverseValue">{{maxReverse[thruster.index]}}</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div ng-click="changeThruster('TopLeft')" class="motor" style="grid-column: 1; grid-row: 4;">
+                <div>
+                    <img src="../images/Thrusters/leftThruster.png" alt="">
+                </div>                
+                <h1>Top-left</h1>
+                <h2>0%</h2>
+            </div>
+
+            <div ng-click="changeThruster('TopRight')" class="motor" style="grid-column: 2; grid-row: 4;">
+                <div>
+                    <img src="../images/Thrusters/leftThruster.png" alt="">
+                </div>
+                <h1>Top-right</h1>
+                <h2>0%</h2>
+            </div>
+
+            <div ng-click="changeThruster('MiddleLeft')" class="motor" style="grid-column: 3; grid-row: 4;">
+                <div>
+                    <img src="../images/Thrusters/leftThruster.png" alt="">
+                </div>                
+                <h1>Middle-left</h1>
+                <h2>0%</h2>
+            </div>
+
+            <div ng-click="changeThruster('MiddleRight')" class="motor" style="grid-column: 1; grid-row: 5;">
+                <div>
+                    <img src="../images/Thrusters/leftThruster.png" alt="">
+                </div>                
+                <h1>Middle-right</h1>
+                <h2>0%</h2>
+            </div>
+
+            <div ng-click="changeThruster('BottomLeft')" class="motor" style="grid-column: 2; grid-row: 5;">
+                <div>
+                    <img src="../images/Thrusters/leftThruster.png" alt="">
+                </div>                
+                <h1>Bottom-left</h1>
+                <h2>0%</h2>
+            </div>
+
+            <div ng-click="changeThruster('BottomRight')" class="motor" style="grid-column: 3; grid-row: 5;">
+                <div>
+                    <img src="../images/Thrusters/leftThruster.png" alt="">
+                </div>                
+                <h1>Bottom-right</h1>
+                <h2>0%</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="../js/EventEmitter2.js"></script>
+<script type="text/javascript" src="../js/roslibjs.js"></script>
+<script src="../js/thrusterControl.js"></script>
+
+
+</html>

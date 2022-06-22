@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js"></script>
+    <title>SeaFox Inventive Control GUI</title>
+</head>
+<body>
+    <div class="navbarContainer">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/icons/ROV.png" alt="SeaFox Inventive Logo" style="display: flex; width: 80%; height: auto;">
+            </div>
+            <ul>
+                <li class="hyperlink" style="background-color: #8bcfe68e;"><a href="index.html">
+                    <img class="icon" src="../images/icons/screen.png" alt="Screen Icon"></a>
+                </li>
+                <li class="hyperlink"><a href="controller.html">
+                    <img class="icon" src="../images/icons/controller.png" alt="Controller Icon"></a>
+                </li>
+                <li class="hyperlink"><a href="thrusterControl.html">
+                    <img class="icon" src="../images/icons/thruster.png" alt="Thruster Icon"></a>
+                </li>
+                <li class="hyperlink"><a href="scrinsho.html">
+                    <img class="icon" src="../images/icons/settings.png" alt="Settings Icon"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="camera">
+        <img src="http://192.168.1.3:8080/?action=stream"  title="oli"></img>
+    </div>
+
+    <div class="secondCamera">        
+        <img src="http://192.168.1.3:8080/?action=stream" scrolling="no" frameborder="0" title="oli"></img>
+    </div>
+
+    <div class="indicatorsContainer">
+        <div class="indicatorsTitle">
+            <h1>Indicators</h1>
+            <div class="indicators">
+                <ul>
+                    <li>LIGHTS<span class="dot"></span></li>
+                    <li>MOTOR 1<span class="dot"></span></li>
+                    <li>MOTOR 2<span class="dot"></span></li>
+                    <li>MOTOR 3<span class="dot"></span></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="buttonContainer"> 
+        <a href="#" class="button">
+            <span class="buttonIcon">a</span>
+            <span class="text">Exit</span>
+        </a>
+    </div>
+
+</body>
+</html>
