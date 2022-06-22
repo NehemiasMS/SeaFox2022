@@ -1,0 +1,260 @@
+html {
+    margin: 0 0 0;
+}
+
+html ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body {
+    display: flex;
+
+    margin: 0 0 0;
+    resize: none;
+    position: sticky;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbarContainer {
+    display: inline-block;
+    justify-content: center;
+    background-color: #FBFCF8;
+    box-shadow: 5px 5px 100px #3c8097;
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+
+.navbar {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.icon {
+    width: 40%;
+    height: auto;
+    transition: all ease-in 0.3s;
+}
+
+.navbar ul {
+    display: inline-block;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4vh;
+}
+
+.navbar ul a {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+    float: left;
+    width: 100%;
+    transition: all ease-in 0.2s;
+}
+
+.hyperlink {
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.navbar ul li a ::after{
+    width: 40%;
+    transition: all ease-in 0.2s;
+}
+
+.navbar ul li a :hover{
+    width: 50%;
+    transition: all ease-in 0.2s;
+}
+
+.thrustersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    left: 4%;
+    position: relative;
+}
+
+.thrustersContainer img {
+    width: 30vw;
+    z-index: -1;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.thrustersController {
+    display: grid;
+    background-color: white;
+    padding: 2% 2% 2%;
+    width: 50vw;
+    height: 88%;
+    box-shadow: 5px 5px 50px #3c8097;
+    border-radius: 50px;
+}
+
+.adjustMotor {
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 2%;
+    padding: 35px 35px 0;
+    width: calc(100% - 70px);
+    box-shadow: inset 3px 3px 30px #3c8097;
+    
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    position: relative;
+
+    display: grid;
+    grid-template-rows: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjustMotor h1 {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    height: min-content;
+    margin: 20px 0 0;
+}
+
+.adjustMotor h2 {
+    margin-right: 10px;
+    width: 35%;
+}
+
+.adjustMotor img {
+    grid-column: 1;
+    grid-row: 2;
+    width: 50%;
+
+}
+
+.setValues {
+    margin-top: 55%;
+    grid-column: 2;
+    grid-row: 1;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.setValues h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.selectorValues {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(67, 67, 67);   
+}
+
+.setMaxForwardContainer{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.setMaxForwardContainer input {
+    width: 280px;
+    background: #3c8097;
+}
+
+.setMaxReverseContainer{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.setMaxReverseContainer input {
+    width: 280px;
+}
+
+.setSteadyContainer{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.setSteadyContainer input {
+    width: 280px;
+}
+
+.motor {
+    background-color: #FBFCF8;
+    box-shadow: 5px 5px 20px #3c8097;
+    border-radius: 40px;
+    margin: 0 0 20px;
+    border: 2px solid rgba(128, 128, 128, 0.36);
+
+    width: 90%;
+
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+    transition: all ease-in 0.2s;
+    
+}
+
+.motor:hover {
+    width: 95%;
+    cursor: pointer;
+}
+
+.motor div{
+    grid-column: 1;
+    grid-row: 2 / 4;
+    height: 20px;
+    width: 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.motor img {
+    width: 80%;
+    max-width: 70px;
+}
+
+.motor h1 {
+    grid-column: 3;
+    grid-row: 1;
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 12% 10% 0;
+    width: 100px;
+    height: 1px;
+    justify-content: center;
+}
+
+.motor h2 {
+    grid-column: 3;
+    grid-row: 2;
+    width: 100px;
+    margin-left: 20px;
+    justify-content: center;
+    height: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: gray;
+}
+
+#controller0 {
+    display: none;
+}

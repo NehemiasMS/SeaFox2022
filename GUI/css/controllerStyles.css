@@ -1,0 +1,95 @@
+html {
+    margin: 0 0 0;
+}
+
+html ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body {
+    display: flex;
+
+    margin: 0 0 0;
+    resize: none;
+    position: sticky;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbarContainer {
+    display: inline-block;
+    justify-content: center;
+    background-color: #FBFCF8;
+    box-shadow: 5px 5px 100px #3c8097;
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+
+.navbar {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.icon {
+    width: 40%;
+    height: auto;
+    transition: all ease-in 0.3s;
+}
+
+.navbar ul {
+    display: inline-block;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4vh;
+}
+
+.navbar ul a {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+    float: left;
+    width: 100%;
+    transition: all ease-in 0.2s;
+}
+
+.hyperlink {
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.navbar ul li a ::after{
+    width: 40%;
+    transition: all ease-in 0.2s;
+}
+
+.navbar ul li a :hover{
+    width: 50%;
+    transition: all ease-in 0.2s;
+}
+
+.controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    left: 4%;
+    position: relative;
+}
+
+.controller img {
+    width: 45%;
+}

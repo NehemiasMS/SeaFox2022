@@ -1,0 +1,262 @@
+html {
+    margin: 0 0 0;
+}
+
+html ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body {
+    display: flex;
+
+    margin: 0 0 0;
+    resize: none;
+    position: sticky;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbarContainer {
+    display: inline-block;
+    justify-content: center;
+    background-color: #FBFCF8;
+    box-shadow: 5px 5px 100px black;
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+
+.navbar {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.icon {
+    left: 10px;
+    width: 40%;
+    margin-right: 0px;
+    height: auto;
+    transition: all ease-in 0.3s;
+}
+
+.navbar ul {
+    display: inline-block;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4vh;
+}
+
+.navbar ul a {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+    float: left;
+    width: 100%;
+    transition: all ease-in 0.2s;
+}
+
+.hyperlink {
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.navbar ul li a ::after{
+    width: 40%;
+    transition: all ease-in 0.2s;
+}
+
+.navbar ul li a :hover{
+    width: 50%;
+    transition: all ease-in 0.2s;
+}
+
+.camera {
+    z-index: -1;
+    left: 4%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.camera img {
+    width: 96%;
+    height: auto;
+}
+
+.secondCamera {
+    background-color: aliceblue;
+    width: 440px;
+    height: 248px;
+    padding: 6px 6px;
+    left: 6%;
+    top: 3%;
+    z-index: 1;
+    position: absolute;
+}
+
+.secondCamera img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 440px;
+    max-height: 248px;
+}
+
+.centeredText {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+    color: black;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: .4rem;
+}
+
+.indicatorsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicatorsTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFCF8;
+    top: 50vh;
+    padding-right: 2%;
+    padding-left: .5%;
+    padding: 1% 0 2% .3%;
+    left: 99%;
+    width: 15%;
+    height: 40vh;
+    position: fixed;
+    opacity: 1;
+    border-radius: 15px;
+    transition: all ease-in 0.5s;
+}
+
+.indicatorsTitle h1 {
+    color: black;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: .4rem;
+}
+
+.indicatorsTitle:hover {
+    opacity: .8;
+    left: 86%;
+}
+
+.indicators {
+    width: 65%;
+    margin-top: 5%;
+    padding: 0 8%;
+}
+
+.indicators ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: .2rem;
+}
+
+.indicators li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.dot {
+    display: inline-block;
+    background-color: greenyellow;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.stopButtonContainer {
+    display: flex;
+    top: 88%;
+    left: 6%;
+    position: absolute;
+}
+
+.stopButtonContainer button {
+    position: relative;
+    font-size: 2.1rem;
+    padding: 10px 50px;
+    background-color: rgb(231, 0, 0);
+    color: rgb(255, 238, 238);
+    left: -5px;
+    transition: all ease-in 0.3s;
+}
+
+.stopButtonContainer button:hover {
+    transition: all ease-in 0.3s;
+    left: 0px;
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    display: flex;
+    top: 88%;
+    left: 6%;
+    position: absolute;    
+}
+
+.button {
+    background-color: rgb(231, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 60px; /** I'm animating max-width because width needs to be auto, and auto can't be animated **/
+    -webkit-transition: max-width 0.7s;
+    transition: max-width 0.7s;
+}
+  
+  .button:hover {
+    max-width: 360px;
+}
+  
+  .buttonIcon {
+    /* font-family: "Font Awesome 5 Free"; */
+    font-size: 16px;
+    margin-right: 15px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+}
+  
+  .text {
+    white-space: nowrap;
+    padding-right: 2px;
+    padding-left: 22px;
+}
